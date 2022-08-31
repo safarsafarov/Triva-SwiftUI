@@ -24,15 +24,23 @@ struct QuestionView: View {
             ProgressBar(progress: 40)
             
             VStack(alignment: .leading, spacing: 20) {
-                Text("Just Cause 2 was mainly set in what fictional Southeast Asian island country?")
+                Text("Bulls are attracted to the color red.")
                     .font(.system(size: 20))
                     .bold()
                     .foregroundColor(.gray)
+                
+                
+                AnswerRow(answer: Answer(text: "false", isCorrect: true))
+                AnswerRow(answer: Answer(text: "true", isCorrect: false))
             }
+            PrimaryButton(text: "Next")
+            
+            Spacer()
         }
         .padding()
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(bg)
+        .navigationBarHidden(true)
     }
         
 }

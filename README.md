@@ -1,2 +1,0 @@
-# Triva-SwiftUI
-
