@@ -9,7 +9,7 @@ import SwiftUI
 
 struct QuestionView: View {
     @EnvironmentObject var triviaManager: TriviaManager
-
+    var bg: Color = Color("Background")
     var body: some View {
         VStack(spacing: 40) {
             HStack {
@@ -48,7 +48,7 @@ struct QuestionView: View {
         }
         .padding()
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
-        .background(Color(red: 0.984313725490196, green: 0.9294117647058824, blue: 0.8470588235294118))
+        .background(bg)
         .navigationBarHidden(true)
     }
 }
